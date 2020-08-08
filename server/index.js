@@ -12,6 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+
 let todos = null;
 
 (async () => {
@@ -95,3 +96,5 @@ app.get("/testPost", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}/todos`);
 });
+
+module.exports = app;
